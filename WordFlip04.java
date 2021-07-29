@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class WordFlip {
+public class WordFlip04 {
     public static ArrayList<String> solution(ArrayList<String> arr) {
         ArrayList<String> answer = new ArrayList<>();
         for(int i = 0; i < arr.size(); i++) {
