@@ -4,7 +4,7 @@ public class WordCircular07 {
     public static String solution(String str) {
         // String tmp = new StringBuilder(str).reverse().toString();
         // if(str.equalsequalsIgnoreCase(tmp)) return "YES";
-        // else return "NO";
+        // else return "NO";   //밑에가 더 효율적이긴한데 reverse가 편리하다는거알아두자
         int lt = 0;
         int rt = str.length() - 1;
         str = str.toLowerCase();
