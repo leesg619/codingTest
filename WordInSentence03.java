@@ -35,5 +35,6 @@ public class WordInSentence03 {
         Scanner kb = new Scanner(System.in);
         String str = kb.nextLine();
         System.out.println(solution(str));
+        kb.close();
     }
 }

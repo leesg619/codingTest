@@ -33,5 +33,6 @@ public class WordFlip04 {
         for(String ans: solution(arr)) {
             System.out.println(ans);
         }
+        kb.close();
     }
 }

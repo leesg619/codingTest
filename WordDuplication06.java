@@ -21,5 +21,6 @@ public class WordDuplication06 {
         Scanner kb = new Scanner(System.in);
         String str = kb.nextLine();
         System.out.println(solution(str));
+        kb.close();
     }
 }

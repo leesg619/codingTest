@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class findString01 {
+public class FindString01 {
     public static int solution(String str, char t) {
         int answer= 0;
         str = str.toUpperCase();
