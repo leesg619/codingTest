@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class RSP {
+public class RSP03 {
     
     public static ArrayList<Character> solution(int n, int[] arr1, int[] arr2) {
         ArrayList<Character> answer = new ArrayList<>();
