@@ -1,3 +1,4 @@
+package inflearn_String01;
 import java.util.Scanner;
 //문자열의 중복된 문자를 제거하는문제
 public class WordDuplication06 {

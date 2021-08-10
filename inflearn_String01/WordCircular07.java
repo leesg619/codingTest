@@ -1,3 +1,4 @@
+package inflearn_String01;
 import java.util.Scanner;
 //거꾸로해도 같은문자열인지 판단
 public class WordCircular07 {

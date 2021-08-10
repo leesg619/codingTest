@@ -1,3 +1,4 @@
+package inflearn_String01;
 import java.util.Scanner;
 
 public class ExtractNumber09 {
