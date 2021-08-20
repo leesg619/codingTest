@@ -1,3 +1,5 @@
+package inflearn_twoPointer03;
+
 import java.util.*;
 
 public class CombineArrays01 {
