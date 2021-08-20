@@ -19,6 +19,7 @@ public class MaxSales03 {
 		for(int x : solution(n, arr)){
 			System.out.print(x+" ");
         }
+        kb.close();
     }
 
 }
