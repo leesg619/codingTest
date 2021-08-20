@@ -1,3 +1,5 @@
+package inflearn_Array02;
+
 import java.util.*;
 class StudentArray02 {
   public static int solution(int n, int[] arr){

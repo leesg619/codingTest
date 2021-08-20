@@ -1,3 +1,5 @@
+package inflearn_Array02;
+
 import java.util.*;
 
 public class Menthoring12 {
