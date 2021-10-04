@@ -1,3 +1,5 @@
+package inflearn_hash04;
+
 import java.util.*;
 
 public class Hash0403 {
