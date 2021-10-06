@@ -5,6 +5,7 @@ import java.util.*;
 public class SQ0502 {
 
     public static String solution(String str) {
+
         String answer = "";
         Stack<Character> stack1 = new Stack<>();
 
@@ -30,9 +31,11 @@ public class SQ0502 {
                 stack1.push(c);
             }
         }
-    return stack1.toString();
-    */
-
+        for (Character c : stack1) {
+            answer+=""+c;
+        }
+        return answer;
+*/
     }
 
     public static void main(String[] args) {
