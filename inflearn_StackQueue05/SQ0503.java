@@ -31,8 +31,8 @@ public class SQ0503 {
                 }
 
             }
-
-            else continue;   // 크레인 해당 줄에 옮길애가 없을때는 다음 move
+            // 크레인 해당 줄에 옮길애가 없을때는 어차피 if (nums[now] > 0) 에서 안걸리므로 처리안하고넘김
+            // else continue;  
         }
         return answer;
     }
