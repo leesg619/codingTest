@@ -1,33 +1,25 @@
 package inflearn_Sort06;
-
 import java.util.*;
 
 public class Sort0604 {
     public static int[] solution(int size, int n, int[] arr){
         int[] cache = new int[size];
-        int now = 0;
         for (int task : arr) {
-            int idx = 0;
+            int idx = -1;  //기존 캐쉬 안에 해당 task가 있는지 확인. 없으면 넣어줄 인덱스는 0이다.
 
             for (int i = 0; i < size ; i++) {
                 if (cache[i] == task) {
                     idx = i;
                 }
             }
-
-            //캐시 메모리에 있든 없든 하나씩 뒤로 싹 밀어주는건똑같음 이거 공통로직으로 분리하면 된다.
-            System.out.println("idx = " + idx);
-            if (idx == ) {
-                for (int i = 0; i < ; i++) {
-
-                }
-            } else {
-                int temp = cache[idx];
-                for (int i = idx; i > 0; i--) {
-                    cache[idx] = cache[idx-1];
-                }
-                cache[0] = temp;
+            //캐시 메모리에 없는 task: 하나씩 뒤로 싹 밀어주기
+            //캐시 메모리에 있으면 그곳부터 밀기
+            if (idx == -1) {
+                for (int i = size-1 ; i > 0; i--) cache[i] = cache[i-1];
             }
+            for (int i = idx; i > 0; i--) cache[i] = cache[i-1];
+
+            cache[0] = task;
         }
         return cache;
     }
