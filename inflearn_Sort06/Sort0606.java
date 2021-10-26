@@ -1,6 +1,4 @@
 package inflearn_Sort06;
-
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Sort0606 {
