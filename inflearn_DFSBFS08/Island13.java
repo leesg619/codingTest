@@ -1,0 +1,52 @@
+package inflearn_DFSBFS08;
+
+import java.util.Scanner;
+
+public class Island13 {
+    static int n, m;
+    static int[] land, ch;
+    static int answer;
+    static int[] dx={-1,0,1,0,-1,1,-1,1};
+    static int[] dy={0,1,0,-1,-1,-1,1,1};
+    static boolean flag = false;
+
+    public void dfs(int x, int y) {
+        if ( x<=0 || y<=0 || x>=n || y>=n || land[x][y] == 0) return;
+
+        if (land[x][y] == 1) {
+            land[x][y] = 0; //check
+            for (int i = 0; i < 8; i++) {
+                dfs(dx[i], dy[i]);
+            }
+            flag = true;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Island13 T = new Island13();
+        Scanner kb = new Scanner(System.in);
+        n=kb.nextInt();
+
+        land = new int[n][n];
+        ch = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                land[i][j] = kb.nextInt();
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                T.dfs(i, j);
+                if (flag){
+                    answer++;
+                    flag = false;
+                }
+
+            }
+        }
+
+        System.out.println(answer);
+    }
+}
