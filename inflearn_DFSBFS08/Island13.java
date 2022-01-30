@@ -1,8 +1,7 @@
 package inflearn_DFSBFS08;
 
 import java.util.Scanner;
-
-public class Main {
+public class Island13 {
     static int n, m;
     static int[][] land;
     static int answer;
@@ -24,7 +23,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Island13 T = new Island13();
         Scanner kb = new Scanner(System.in);
         n=kb.nextInt();
         land = new int[n][n];
