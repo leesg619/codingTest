@@ -20,7 +20,7 @@ class Time implements Comparable<Time>{
     }
 }
 
-public class Main {
+public class G02 {
 
     public int greedy(ArrayList<Time> arr) {
         int answer = 1;
@@ -39,7 +39,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        G02 T = new G02();
         Scanner kb = new Scanner(System.in);
         int n=kb.nextInt();
         ArrayList<Time> arr = new ArrayList<>();
